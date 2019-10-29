@@ -1,5 +1,6 @@
 package com.scaron.reactiveAPI.controller;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
@@ -20,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 @AutoConfigureWebTestClient
 @DirtiesContext
+@Ignore
 public class FluxAndMonoControllerTest {
 
     @Autowired

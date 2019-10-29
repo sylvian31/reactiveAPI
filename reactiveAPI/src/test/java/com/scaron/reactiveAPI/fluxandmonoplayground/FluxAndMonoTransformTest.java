@@ -1,6 +1,8 @@
 package com.scaron.reactiveAPI.fluxandmonoplayground;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.DirtiesContext;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
@@ -9,7 +11,8 @@ import java.util.List;
 
 import static reactor.core.scheduler.Schedulers.parallel;
 
-
+@DirtiesContext
+@Ignore
 public class FluxAndMonoTransformTest {
 
     List<String> names = Arrays.asList("adam", "anna", "jack", "jenny");

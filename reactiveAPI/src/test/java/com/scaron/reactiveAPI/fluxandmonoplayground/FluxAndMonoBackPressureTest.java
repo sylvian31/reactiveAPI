@@ -1,10 +1,14 @@
 package com.scaron.reactiveAPI.fluxandmonoplayground;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.DirtiesContext;
 import reactor.core.publisher.BaseSubscriber;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
+@DirtiesContext
+@Ignore
 public class FluxAndMonoBackPressureTest {
 
     @Test

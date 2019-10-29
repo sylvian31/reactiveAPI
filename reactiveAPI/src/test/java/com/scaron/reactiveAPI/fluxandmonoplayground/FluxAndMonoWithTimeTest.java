@@ -1,11 +1,15 @@
 package com.scaron.reactiveAPI.fluxandmonoplayground;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.DirtiesContext;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
+@DirtiesContext
+@Ignore
 public class FluxAndMonoWithTimeTest {
 
     @Test
